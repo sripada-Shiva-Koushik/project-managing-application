@@ -7,7 +7,7 @@ function App() {
   const [chatMessage, setChatMessage] = useState('');
   const [chatMessages, setChatMessages] = useState([]);
   const [taskName, setTaskName] = useState('');
-  const [assignedTo, setAssignedTo] = useState('Saurab');
+  const [assignedTo, setAssignedTo] = useState('');
   const [dueDate, setDueDate] = useState('');
   const [tasks, setTasks] = useState([]);
   const [description, setDescription] = useState('');
@@ -149,11 +149,11 @@ function App() {
             <br />
             <label htmlFor="assignedTo">Assign By:</label>
             <select id="assignedTo" name="assigned_to" value={assignedTo} onChange={handleAssignedToChange}>
-              <option value="Saurab">Saurab</option>
-              <option value="Aryan">Aryan</option>
-              <option value="Akash">Akash</option>
-              <option value="Ankush">Ankush</option>
-              <option value="Satyam">Satyam</option>
+              <option value="Ajit">Ajit</option>
+              <option value="Jaswanth">Jaswanth</option>
+              <option value="Rajesh">Rajesh</option>
+              <option value="Santhosh">Santhosh</option>
+              <option value="Vardhan">Vardhan</option>
             </select>
             <br />
             <label htmlFor="dueDate">Due Date:</label>
@@ -209,11 +209,11 @@ function App() {
         <div className="chat-input">
           <select id="writerName" value={writerName} onChange={handleWriterNameChange}>
             <option value="">Select Your Name</option>
-            <option value="Saurab">Saurab</option>
-            <option value="Aryan">Aryan</option>
-            <option value="Akash">Akash</option>
-            <option value="Ankush">Ankush</option>
-            <option value="Satyam">Satyam</option>
+            <option value="Ajit">Ajit</option>
+            <option value="Jaswanth">Jaswanth</option>
+            <option value="Rajesh">Rajesh</option>
+            <option value="Santhosh">Santhosh</option>
+            <option value="Vardhan">Vardhan</option>
           </select>
           <input
             type="text"
